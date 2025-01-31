@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Basic File Operations",
+    "input": {
+      "operation": "write",
+      "path": "test_files/basic.txt",
+      "content": "Hello, World!",
+      "permissions": "644"
+    },
+    "expected_output": {
+      "success": true
+    }
+  },
+  {
+    "name": "Read Operation",
+    "input": {
+      "operation": "read",
+      "path": "test_files/basic.txt"
+    },
+    "expected_output": {
+      "success": true,
+      "content": "Hello, World!"
+    }
+  },
+  {
+    "name": "Permission Check",
+    "input": {
+      "operation": "check_permissions",
+      "path": "test_files/basic.txt"
+    },
+    "expected_output": {
+      "success": true,
+      "permissions": "644"
+    }
+  },
+  {
+    "name": "Delete Operation",
+    "input": {
+      "operation": "delete",
+      "path": "test_files/basic.txt"
+    },
+    "expected_output": {
+      "success": true
+    }
+  }
+]
